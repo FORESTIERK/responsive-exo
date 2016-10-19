@@ -1,0 +1,416 @@
+/*========== CSS ==========*/
+
+/* RESET AUTO */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+  background-color: #232947;
+  color: #fff;
+}
+
+/*== HEADER ==*/
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #232947;
+  color: #FFF;
+  padding: 18px;
+}
+header a{
+  color: white;
+  text-decoration: none;
+}
+span{
+  background-color: white;
+  color:black;
+  padding: 3px;
+}
+/*== SECTION HEADER ==*/
+}
+.sectionheader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  width: 100%;
+  height: 350px;
+  background-color: #232947;
+  color: #FFF;
+}
+.sectionheader h1{
+  margin: 90px 150px 20px 150px;
+  font-size: 35px;
+}
+.sectionheader p{
+  margin: 20px 60px 60px 150px;
+}
+.sectionheader hr{
+  margin: 20px 150px 20px 150px;
+  width: 860px;
+}
+.textheader{
+	display: flex;
+	align-items: center;
+}
+/* BOUTON INSCRIPTION HEADER*/
+#btn_inscr{
+	background: none;
+  margin-top: -50px;
+	height: 40px;
+	width: 165px;
+	padding: 5px;
+	border: 2px solid white;
+  color: white;
+}
+#btn_inscr:hover{
+  color: aqua;
+  border: 2px solid aqua;
+}
+.fa-long-arrow-right{
+	margin-left: 20px;
+}
+
+/*== SECTION 1 ==*/
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  width: 100%;
+}
+.bloc1, .bloc2, .bloc3{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	justify-content: space-between;
+}
+/* DIMENSION DES BLOCKS*/
+.bloc1 div, .bloc2 div, .bloc3 div{
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.bloc1 article, .bloc2 article, .bloc3 article{
+	display: flex;
+	flex: 2;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 20px;
+}
+.bloc1 hr{
+  width: 120px;
+}
+.bloc2 hr{
+  width: 100px;
+}
+.bloc3 div hr{
+  width: 150px;
+}
+.bloc3 article hr{
+  width: 90px;
+}
+/*=  IMAGE DES BLOCKS =*/
+.bloc1 h2, .bloc2 h2, .bloc3 h2{
+  z-index: 3;
+}
+.bloc1 hr, .bloc2 hr, .bloc3 hr{
+  z-index: 3;
+}
+.bloc1 p, .bloc2 p, .bloc3 p{
+  z-index: 3;
+}
+/* IMAGE 1 */
+.bloc1 div{
+  display: flex;
+  position: relative;
+	background-image: url("images/pic01.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+.bloc1 div::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 230, 230, 0.5);
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.bloc1 div:hover::before{
+  opacity: 0;
+}
+/* IMAGE 2 */
+.bloc1 article{
+  position: relative;
+	background-image: url("images/pic02.jpg");
+  background-size: cover;
+}
+.bloc1 article::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(173, 51, 255, 0.5);
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.bloc1 article:hover::before{
+  opacity: 0;
+}
+/* IMAGE 3 */
+.bloc2 article{
+  position: relative;
+	background-image: url("images/pic03.jpg");
+  background-size: cover;
+}
+.bloc2 article::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 26, 26, 0.5);
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.bloc2 article:hover::before{
+  opacity: 0;
+}
+
+/* IMAGE 4 */
+.bloc2 div{
+  position: relative;
+	background-image: url("images/pic04.jpg");
+  background-size: cover;
+}
+.bloc2 div::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 204, 0, 0.5);
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.bloc2 div:hover::before{
+  opacity: 0;
+}
+/* IMAGE 5 */
+.bloc3 div{
+  position: relative;
+	background-image: url("images/pic05.jpg");
+  background-size: cover;
+}
+.bloc3 div::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 102, 255, 0.5);
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.bloc3 div:hover::before{
+  opacity: 0;
+}
+/* IMAGE 6 */
+.bloc3 article{
+  position: relative;
+	background-image: url("images/pic06.jpg");
+  background-size: cover;
+}
+.bloc3 article::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 255, 26, 0.5);
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+.bloc3 article:hover::before{
+  opacity: 0;
+}
+/*== SECTION 2 ==*/
+.section2{
+  margin: 150px;
+}
+.section2 h2{
+  margin-bottom: 15px;
+}
+.section2 p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.section2 hr{
+  width: 200px;
+}
+#boutonaside{
+	background: none;
+	height: 40px;
+	width: 165px;
+	padding: 5px;
+	border: 2px solid white;
+  color: white;
+}
+#boutonaside:hover{
+  color: aqua;
+  border: 2px solid aqua;
+}
+.section2 .fa-long-arrow-right{
+	margin-left: 20px;
+}
+/*== SECTION 3 ==*/
+label {
+	margin-bottom: 10px;
+}
+section form{
+	display: flex;
+	flex-direction: row;
+}
+section form input{
+	height: 50px;
+	background-color: rgba(35,41,71,0.1);
+}
+.formulaire {
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px 15px 15px;
+	width: 50%;
+}
+.NE {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.section3{
+	display: flex;
+	justify-content: space-between;
+  margin: 150px;
+}
+/* CHAMP NOM + EMAIL */
+form input {
+	border: inherit;
+	background-color: rgba(212,212,255,0.035)!important;
+  color: #FFF;
+}
+.duoinput1{
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+}
+.duoinput2{
+	display: flex;
+	flex-direction: column;
+	width: 310px;
+}
+/* BOUTON EFFACER ENVOYER */
+.duobouton{
+	display: flex;
+	flex-direction: row;
+}
+#envoyer {
+	margin: 10px 10px 10px 0;
+	height: 50px;
+	width: 150px;
+	background-color: #fff;
+	color: #232947;
+}
+#effacer {
+  background-color: #232947;
+	margin:10px;
+	height: 50px;
+	width: 150px;
+  color: #fff;
+	border:solid 2px white;
+}
+#effacer:hover {
+  color: aqua;
+	border:solid 2px aqua;
+}
+/* CHAMP MESSAGE */
+textarea {
+	height: 170px;
+	background-color: rgba(212,212,255,0.035);
+	border: inherit;
+  color: #FFF;
+}
+
+/*= ASIDE =*/
+.fa-envelope{
+  display: flex;
+  margin: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 150px;
+}
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+aside a{
+  justify-content: center;
+	color: white;
+}
+/*== FOOTER ==*/
+footer{
+	background-color: #232947;
+}
+footer a{
+	color: #000;
+}
+footer ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+footer li{
+	margin: 15px;
+  padding: 5px;
+  background-color: #FFF;
+  border-radius: 150px;
+}
+footer p{
+  font-size: 14px;
+  padding: 15px;
+  color: gray;
+}
